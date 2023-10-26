@@ -2,8 +2,8 @@
 all: build
 
 build:
-	docker buildx build -t vvampirius/retracker:no-proxy .
+	docker buildx build -t vvampirius/retracker:proxy .
 
 clean:
-	docker image rm vvampirius/retracker:no-proxy
+	docker image rm vvampirius/retracker:proxy
 
